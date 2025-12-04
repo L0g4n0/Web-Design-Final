@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #faf7f2;
+    color: #333;
+}
+
+header {
+    background: #7a9e6f;
+    padding: 25px;
+    text-align: center;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+.menu-section {
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.menu-section h2 {
+    border-bottom: 2px solid #7a9e6f;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+/* Responsive-friendly grid already here */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.item-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.item-card h3 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    color: #5a7d55;
+}
+
+.price {
+    margin-top: 10px;
+    display: inline-block;
+    font-weight: bold;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #e5e0d9;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* --- Responsive Images --- */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* --- Responsive Breakpoints --- */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .menu-section {
+        padding: 20px;
+    }
+}
+
+/* Phones (480px and below) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    .tagline {
+        font-size: 0.95rem;
+    }
+
+    .item-card {
+        padding: 15px;
+    }
+
+    .menu-section h2 {
+        font-size: 1.4rem;
+    }
+}
